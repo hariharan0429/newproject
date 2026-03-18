@@ -1,0 +1,3 @@
+class NormalizationAgent:
+    def run(self, text):
+        return [t.strip().lower() for t in text.split(",")]

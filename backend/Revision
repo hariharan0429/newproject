@@ -1,0 +1,8 @@
+class RevisionAgent:
+    def run(self, diseases, evidence):
+        confidence = {}
+        for d in diseases:
+            total = len(d["symptoms"])
+            match = len(evidence[d["disease"]]["supporting"])
+            confidence[d["disease"]] = round(match/total, 2)
+        return confidence

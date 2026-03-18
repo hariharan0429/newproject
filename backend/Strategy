@@ -1,0 +1,7 @@
+class StrategyAgent:
+    def run(self, diseases, evidence):
+        for d in diseases:
+            missing = evidence[d["disease"]]["missing"]
+            if missing:
+                return f"Ask about: {missing[0]}"
+        return f"Recommend: {diseases[0]['next_step']}"

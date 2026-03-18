@@ -1,0 +1,10 @@
+class EvidenceAgent:
+    def run(self, diseases, symptoms):
+        evidence = {}
+        for d in diseases:
+            match = list(set(symptoms) & set(d["symptoms"]))
+            evidence[d["disease"]] = {
+                "supporting": match,
+                "missing": list(set(d["symptoms"]) - set(symptoms))
+            }
+        return evidence

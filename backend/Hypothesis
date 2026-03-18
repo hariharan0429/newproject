@@ -1,0 +1,8 @@
+from backend.rag_engine import RAG
+
+class HypothesisAgent:
+    def __init__(self):
+        self.rag = RAG()
+
+    def run(self, symptoms):
+        return self.rag.retrieve(symptoms)

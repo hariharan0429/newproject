@@ -1,0 +1,17 @@
+[
+{"disease":"Pneumonia","symptoms":["fever","cough","shortness of breath","low spo2"],"next_step":"Chest X-ray"},
+{"disease":"Pulmonary Embolism","symptoms":["chest pain","breathlessness","low spo2"],"next_step":"CT scan"},
+{"disease":"Asthma","symptoms":["wheezing","shortness of breath"],"next_step":"Spirometry"},
+{"disease":"Tuberculosis","symptoms":["chronic cough","weight loss","night sweats"],"next_step":"Sputum test"},
+{"disease":"COVID-19","symptoms":["fever","cough","loss of smell"],"next_step":"PCR test"},
+{"disease":"Bronchitis","symptoms":["cough","mucus"],"next_step":"Clinical exam"},
+{"disease":"Heart Attack","symptoms":["chest pain","sweating"],"next_step":"ECG"},
+{"disease":"Anemia","symptoms":["fatigue","dizziness"],"next_step":"CBC"},
+{"disease":"Diabetes","symptoms":["thirst","frequent urination"],"next_step":"Blood sugar"},
+{"disease":"Hypertension","symptoms":["headache"],"next_step":"BP check"},
+{"disease":"Dengue","symptoms":["fever","rash"],"next_step":"NS1 test"},
+{"disease":"Malaria","symptoms":["fever","chills"],"next_step":"Blood smear"},
+{"disease":"Appendicitis","symptoms":["abdominal pain","nausea"],"next_step":"Ultrasound"},
+{"disease":"Migraine","symptoms":["headache","nausea"],"next_step":"Neuro exam"},
+{"disease":"Flu","symptoms":["fever","body pain"],"next_step":"Rest"}
+]

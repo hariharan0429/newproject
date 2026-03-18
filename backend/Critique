@@ -1,0 +1,7 @@
+class CritiqueAgent:
+    def run(self, confidence):
+        sorted_conf = sorted(confidence.items(), key=lambda x: x[1], reverse=True)
+        if len(sorted_conf) > 1:
+            if abs(sorted_conf[0][1] - sorted_conf[1][1]) < 0.2:
+                return f"⚠️ Also consider {sorted_conf[1][0]}"
+        return "No bias"
